@@ -1,17 +1,27 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 5 |   'abstracts/placeholders';
- *   |   ^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   assets\scss\main.scss 5:3  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 5 \2502    'abstracts/placeholders';\d\a   \2502    ^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   assets\\scss\\main.scss 5:3  root stylesheet";
+/* =========================================================== */
+/* RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+a {
+  text-decoration: none;
+}
+
+/* =========================================================== */
+/* BASE */
+body {
+  background-color: #16161a;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #fffffe;
+}
+
+p, a, span {
+  color: #94a1b2;
+}
+
+/*# sourceMappingURL=style.css.map */

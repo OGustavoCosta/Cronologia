@@ -7,48 +7,45 @@
 sass/
 |
 |– abstracts/
-|   |– _variables.scss    # Variáveis do Sass
-|   |– _functions.scss    # Funções do Sass
-|   |– _mixins.scss       # Mixins do Sass
-|   |– _placeholders.scss # Placeholders do Sass
+|   |– _variables.scss      # Variáveis do Sass
+|   |– _functions.scss      # Funções do Sass
+|   |– _mixins.scss         # Mixins do Sass
+|   |– _placeholders.scss   # Placeholders do Sass
 |
 |– base/
-|   |– _reset.scss        # Reset/normalização
-|   |– _base.scss         # Estilos padrão
-|   |– _typography.scss   # Regras de tipografia
-|   …                     # Etc.
+|   |– _reset.scss          # Reset/normalização
+|   |– _base.scss           # Estilos padrão
+|   |– _typography.scss     # Regras de tipografia
 |
 |– components/
-|   |– _buttons.scss      # Botões
-|   |– _carousel.scss     # Carrossel
-|   |– _cover.scss        # Capa
-|   |– _dropdown.scss     # Dropdown
-|   …                     # Etc.
+|   |– _button.scss         # Botões
+|   |– _card.scss           # Cards
+|   |– _form.scss           # Formulários
+|   |– _modal.scss          # Caixa de diálogo
+|   |– _navigation.scss     # Barra de navegação
+|   |– _table.scss          # Tabelas
+|   |– _article.scss        # Artigos
 |
 |– layout/
-|   |– _navigation.scss   # Navegação
-|   |– _grid.scss         # Sistema de grid
-|   |– _header.scss       # Cabeçalho
-|   |– _footer.scss       # Rodapé
-|   |– _sidebar.scss      # Barra lateral
-|   |– _forms.scss        # Formulários
-|   …                     # Etc.
+|   |– _grid.scss           # Sistema de grid
+|   |– _header.scss         # Cabeçalho
+|   |– _footer.scss         # Rodapé
+|   |– _sidebar.scss        # Barra lateral
+|   |– _section.scss        # Seções
+|   |– _article.scss        # Artigos
+|   |– _main-content.scss   # Conteúdo principal
 |
 |– pages/
-|   |– _home.scss         # Estilos específicos da página inicial
-|   |– _contact.scss      # Estilos específicos da página de contato
-|   …                     # Etc.
+|   |– _home.scss           # Estilos específicos da página inicial
+|   |– _main-menu.scss      # Estilos específicos da página do menu do jogo
+|   |– _game.scss           # Estilos específicos da página do menu do jogo
 |
 |– themes/
-|   |– _theme.scss        # Tema padrão
-|   |– _admin.scss        # Tema do painel administrativo
-|   …                     # Etc.
+|   |– _theme.scss          # Tema padrão
+|   |– _dark-theme.scss     # Tema escuro
+|   |– _light-theme.scss    # Tema claro
 |
 |– vendors/
-|   |– _bootstrap.scss    # Bootstrap
-|   |– _jquery-ui.scss    # jQuery UI
-|   …                     # Etc.
+|   |– _tailwindcss.scss      # Bootstrap
 |
-`– main.scss              # Arquivo principal do Sass
-
-
+`– main.scss                # Arquivo principal do Sass

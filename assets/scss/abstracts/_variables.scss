@@ -1,18 +1,18 @@
-/* =========================================================== */
-/* COLORS */
+// ===========================================================
+// COLORS
 
-/* Background */
+// Background
 $background-color: #16161a;
 
-/* Button */
+// Button
 $button-color: #7f5af0;
 $button-text-color: #fffffe;
 
-/* Titles and Paragraph */
+// Titles and Paragraph
 $title-color: #fffffe;
 $text-color: #94a1b2;
 
-/* Ilustration */
+// Ilustration
 $main-color: #fffffe;
 $secondary-color: #72757e;
 $tertiary-color: #2cb67d;
@@ -20,26 +20,26 @@ $tertiary-color: #2cb67d;
 $stroke-color: #010101;
 $highlight-color: #7f5af0;
 
-/* =========================================================== */
-/* UTILS */
+// ===========================================================
+// UTILS
 
-/* Button */
-$button-text-size: clamp(0.85rem, 1.75vw, 1.125rem); /* 13.6px a 18px */
+// Button
+$button-text-size: clamp(0.85rem, 1.75vw, 1.125rem); // 13.6px a 18px
 $button-padding: clamp(0.8rem, 1.2vw, 1rem) clamp(1.5rem, 2.5vw, 2rem);
 
-/* Page Padding */
+// Page Padding
 $page-content-padding: clamp(5%, 6vw, 7%);
 
-/* Titles and Paragraph */
-$large-title-size: clamp(1.69rem, 3vw, 2.25rem); /* 36px a 48px */
-$deafult-title-size: clamp(1.25rem, 2.5vw, 1.75rem); /* 20px a 28px */
-$small-title-size: clamp(1rem, 2vw, 1.5rem); /* 16px a 24px */
+// Titles and Paragraph
+$large-title-size: clamp(1.69rem, 3vw, 2.25rem); // 36px a 48px
+$deafult-title-size: clamp(1.25rem, 2.5vw, 1.75rem); // 20px a 28px
+$small-title-size: clamp(1rem, 2vw, 1.5rem); // 16px a 24px
 
-$large-text-size: clamp(1.125rem, 2vw, 1.5rem); /* 18px a 24px */
-$default-text-size: clamp(0.94rem, 2vw, 1.25rem); /* 15px a 20px */
-$small-text-size: clamp(0.75rem, 1.5vw, 1rem); /* 12px a 16px */
+$large-text-size: clamp(1.125rem, 2vw, 1.5rem); // 18px a 24px
+$default-text-size: clamp(0.94rem, 2vw, 1.25rem); // 15px a 20px
+$small-text-size: clamp(0.75rem, 1.5vw, 1rem); // 12px a 16px
 
-/* ViewPort (Breakpoints)*/
+// ViewPort (Breakpoints)
 $phone-viewport: 480px;
 $tablet-viewport: 768px;
 $laptop-viewport: 1280px;

@@ -1,0 +1,22 @@
+{
+  "name": "tempus",
+  "version": "1.0.0",
+  "description": "Você acha que domina a linha do tempo da história? Tempus é um jogo desafiador e educativo onde você precisa organizar eventos históricos em ordem cronológica!",
+  "main": "index.js",
+  "scripts": {
+    "compSASS": "sass --watch assets/scss/main.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OGustavoCosta/Tempus.git"
+  },
+  "author": "Gustavo Costa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OGustavoCosta/Tempus/issues"
+  },
+  "homepage": "https://github.com/OGustavoCosta/Tempus#readme",
+  "devDependencies": {
+    "sass": "^1.85.1"
+  }
+}

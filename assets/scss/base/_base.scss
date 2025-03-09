@@ -1,0 +1,19 @@
+/* =========================================================== */
+/* BASE */
+
+@use '../abstracts/_variables' as *;
+@use '../abstracts/_functions';
+@use '../abstracts/_mixins';
+@use '../abstracts/_placeholders';
+
+body{
+    background-color: $background-color;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: $title-color;
+}
+
+p, a, span{
+    color: $text-color;
+}

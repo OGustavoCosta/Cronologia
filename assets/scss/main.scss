@@ -1,35 +1,27 @@
-@import
-  'abstracts/variables',
-  'abstracts/functions',
-  'abstracts/mixins',
-  'abstracts/placeholders';
+@use 'vendors/_tailwindcss';
 
-@import
-  'vendors/bootstrap',
-  'vendors/jquery-ui';
+@use 'base/_reset';
+@use 'base/_base';
+@use 'base/_typography';
 
-@import
-  'base/reset',
-  'base/typography';
+@use 'layout/_grid';
+@use 'layout/_header';
+@use 'layout/_footer';
+@use 'layout/_sidebar';
+@use 'layout/_section';
+@use 'layout/_main-content';
 
-@import
-  'layout/navigation',
-  'layout/grid',
-  'layout/header',
-  'layout/footer',
-  'layout/sidebar',
-  'layout/forms';
+@use 'components/_button';
+@use 'components/_card';
+@use 'components/_form';
+@use 'components/_modal';
+@use 'components/_table';
+@use 'components/_navigation';
 
-@import
-  'components/buttons',
-  'components/carousel',
-  'components/cover',
-  'components/dropdown';
+@use 'pages/_home';
+@use 'pages/_main-menu';
+@use 'pages/_game';
 
-@import
-  'pages/home',
-  'pages/contact';
-
-@import
-  'themes/theme',
-  'themes/admin';
+@use 'themes/_theme';
+@use 'themes/_dark-theme';
+@use 'themes/_light-theme';
