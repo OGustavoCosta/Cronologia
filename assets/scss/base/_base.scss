@@ -14,6 +14,9 @@ body{
 
     width: 100%;
     min-height: 100lvh;
+
+    overflow-x: hidden;
+    overflow-anchor: none;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -21,8 +24,10 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'Merriweather', serif;
     font-style: italic;
     font-weight: 800;
+    font-size: $large-title-size;
 }
 
 p, a, span{
     color: $text-color;
+    font-size: $default-text-size;
 }

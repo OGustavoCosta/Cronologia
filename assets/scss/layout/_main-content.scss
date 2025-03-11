@@ -8,10 +8,16 @@
 /* LAYOUT MAIN */
 .l-main{
     width: 100%;
+    display: grid;
 }
 
 .l-main__background{
     width: 100%;
+    display: grid;
+
+    @media (min-width: $large-viewport){
+        justify-content: center;
+    }
 }
 
 .l-main__background--hero{

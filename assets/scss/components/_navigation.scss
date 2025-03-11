@@ -21,6 +21,11 @@
     justify-content: space-between;
     align-items: center;
     gap: 7rem;
+
+    @media (max-width: $small-viewport) {
+        gap: 1rem;
+        width: 100%;
+    }
 }
 
 .c-nav__list{
@@ -34,8 +39,9 @@
 
 .c-nav__link{
     color: $main-color;
+    font-size: $small-text-size;
 }
 
 .c-nav__title{
-    
+    font-size: $small-title-size;
 }
