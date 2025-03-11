@@ -1,0 +1,27 @@
+@use '../abstracts/_variables' as *;
+@use '../abstracts/_functions' as *;
+@use '../abstracts/_mixins' as *;
+@use '../abstracts/_placeholders' as *;
+@use '../base/_typography' as *;
+
+/* =========================================================== */
+/* LAYOUT HEADER */
+
+.l-header{
+    width: 100vw;
+    min-width: none;
+}
+
+.l-header--navigation{
+    overflow: hidden;
+    padding: 1.5rem $page-content-padding;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    z-index: 2;
+
+}

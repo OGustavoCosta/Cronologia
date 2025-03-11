@@ -1,17 +1,26 @@
+@use '../abstracts/_variables' as *;
+@use '../abstracts/_functions' as *;
+@use '../abstracts/_mixins' as *;
+@use '../abstracts/_placeholders' as *;
+@use '../base/_typography' as *;
+
+
 /* =========================================================== */
 /* BASE */
-
-@use '../abstracts/_variables' as *;
-@use '../abstracts/_functions';
-@use '../abstracts/_mixins';
-@use '../abstracts/_placeholders';
-
 body{
     background-color: $background-color;
+    font-family: 'Argentum Sans', sans-serif;
+    font-weight: 200;
+
+    width: 100%;
+    min-height: 100lvh;
 }
 
 h1, h2, h3, h4, h5, h6{
     color: $title-color;
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    font-weight: 800;
 }
 
 p, a, span{

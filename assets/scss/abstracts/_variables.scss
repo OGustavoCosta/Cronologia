@@ -17,7 +17,7 @@ $main-color: #fffffe;
 $secondary-color: #72757e;
 $tertiary-color: #2cb67d;
 
-$stroke-color: #010101;
+$stroke-color: #545B65;
 $highlight-color: #7f5af0;
 
 // ===========================================================
@@ -40,7 +40,7 @@ $default-text-size: clamp(0.94rem, 2vw, 1.25rem); // 15px a 20px
 $small-text-size: clamp(0.75rem, 1.5vw, 1rem); // 12px a 16px
 
 // ViewPort (Breakpoints)
-$phone-viewport: 480px;
-$tablet-viewport: 768px;
-$laptop-viewport: 1280px;
-$desktop-viewport: 100vw;
+$small-viewport: 480px;
+$medium-viewport: 768px;
+$large-viewport: 1400px;
+$full-viewport: 100vw;

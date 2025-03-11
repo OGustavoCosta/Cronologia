@@ -1,0 +1,24 @@
+@use '../abstracts/_variables' as *;
+@use '../abstracts/_functions' as *;
+@use '../abstracts/_mixins' as *;
+@use '../abstracts/_placeholders' as *;
+@use '../base/_typography' as *;
+
+/* =========================================================== */
+/* LAYOUT SECTION */
+
+.l-section{
+    width: 100%;
+    display: grid;
+    position: relative;
+    gap: 1rem;
+    padding: 1.5rem $page-content-padding;
+
+    @media (max-width: $medium-viewport){
+        justify-content: center;
+    }
+
+    @media (min-width: $large-viewport){
+        width: $large-viewport;
+    }
+}
