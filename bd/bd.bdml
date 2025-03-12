@@ -1,0 +1,49 @@
+Project Cronologia {
+  database_type: 'PostgreSQL'
+  Note: 'Jogo web de linha do tempo'
+}
+
+Table cards{
+  id integer [PK, increment]
+  title varchar(150) [not null]
+  date date [not null]
+  shortDescription text [not null]
+  description text
+  source text
+  difficulty integer [not null]
+  verified boolean [not null, default: false]
+  categories_id integer [not null, Ref: > categories.id] 
+}
+
+Table categories {
+  id integer [PK, increment]
+  name varchar(100) [not null, unique]
+}
+
+Table tags {
+  id integer [PK, increment]
+  name varchar(100) [not null, unique]
+}
+
+Table categories_tags{
+  categories_id integer [PK, not null]
+  tags_id integer [PK, not null]
+}
+
+Ref: categories_tags.categories_id > categories.id [delete: cascade, update: no action]
+Ref: categories_tags.tags_id > tags.id [delete: cascade, update: no action]
+
+Table cards_tags{
+  cards_id integer [PK, not null]
+  tags_id integer [PK, not null]
+}
+
+Ref: cards_tags.tags_id > tags.id [delete: cascade, update: no action]
+Ref: cards_tags.cards_id > cards.id [delete: cascade, update: no action]
+
+Table admin.users{
+  id integer [PK, increment]
+  email varchar(255) [not null, unique]
+  name varchar(255) [not null]
+  password_hash text [not null]
+}
