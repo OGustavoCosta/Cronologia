@@ -1,4 +1,4 @@
-    💡 Este repositório Possui versões em Português (pt-BR) e Inglês(US).
+    💡 Este repositório Possui versões em Português (pt-BR) e Inglês (US).
     💡 This repository has versions in Portuguese (pt-BR) and English (US).
 
 <!-- ===================================================================== -->
@@ -14,14 +14,17 @@
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Metodologias e Arquitetura](#metodologias-e-arquitetura)
 - [Diagramação](#diagramacao)
+- [Pré-requisitos](#prerequisitos)
 - [Instalação](#instalacao)
 
+<a id="introducao"></a>
 ## Introdução
 
 **Cronologia** é um projeto desenvolvido com o objetivo de explorar e aplicar conceitos e tecnologias em estudo, alinhando-se ao meu interesse em história.
 
 O jogo foi criado para ser desafiador e educativo, no qual você precisa organizar o maior número possível de eventos históricos em ordem cronológica!
 
+<a id="tecnologias-utilizadas"></a>
 ## Tecnologias Utilizadas
 
 Este projeto foi desenvolvido com as seguintes tecnologias:
@@ -35,6 +38,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 - ✔️ PostgreSQL
 - ✔️ DBML
 
+<a id="metodologias-e-arquitetura"></a>
 ## Metodologias e Arquitetura
 
 A arquitetura do projeto segue os seguintes padrões:
@@ -42,16 +46,19 @@ A arquitetura do projeto segue os seguintes padrões:
 - 📂 **Padrão Arquitetural:** MVC (Model, View, Controller);
 - 📂 **Metodologias CSS:** BEM (Block Element Modifier), Padrão 7-1 SASS;
 
+<a id="diagramacao"></a>
 ## Diagramação
 
 - Entidade e Relacionamento - [PDF](db/cronologia_diagram.pdf) / [SVG](db/cronologia_diagram.svg)
 
+<a id="prerequisitos"></a>
 ## Pré-requisitos
 
 Antes de começar, certifique-se de ter os seguintes requisitos instalados:
 
 - 🔧 Node.js - `v22.14.0`
 
+<a id="instalacao"></a>
 ## Instalação
 
 Siga os passos abaixo para configurar o ambiente do projeto:
@@ -91,11 +98,15 @@ npm start  # ou yarn start
 - [Diagramming](#diagramming)
 - [Installation](#installation)
 
+<a id="introduction"></a>
+
 ## Introduction
 
-**Cronologia** is a project developed with the goal of exploring and applying concepts and technologies under study, aligning with my interest in history.
+**Chronology** (in Portuguese: **Cronologia**) is a project developed with the goal of exploring and applying concepts and technologies under study, aligning with my interest in history.
 
 The game was designed to be both challenging and educational, where you need to arrange as many historical events as possible in chronological order!
+
+<a id="technologies-used"></a>
 
 ## Technologies Used
 
@@ -110,6 +121,8 @@ This project was developed using the following technologies:
 - ✔️ PostgreSQL
 - ✔️ DBML
 
+<a id="methodologies-and-architecture"></a>
+
 ## Methodologies and Architecture
 
 The project architecture follows these standards:
@@ -117,15 +130,21 @@ The project architecture follows these standards:
 - 📂 **Architectural Pattern:** MVC (Model, View, Controller);
 - 📂 **CSS Methodologies:** BEM (Block Element Modifier), 7-1 SASS Pattern;
 
+<a id="diagramming"></a>
+
 ## Diagramming
 
 - Entity and Relationship - [PDF](db/cronologia_diagram.pdf) / [SVG](db/cronologia_diagram.svg)
+
+<a id="prerequisites"></a>
 
 ## Prerequisites
 
 Before starting, make sure you have the following requirements installed:
 
 - 🔧 Node.js - `v22.14.0`
+
+<a id="installation"></a>
 
 ## Installation
 
