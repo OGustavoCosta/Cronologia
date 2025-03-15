@@ -1,22 +1,26 @@
 {
-  "name": "tempus",
+  "name": "cronologia",
   "version": "1.0.0",
-  "description": "Você acha que domina a linha do tempo da história? Tempus é um jogo desafiador e educativo onde você precisa organizar eventos históricos em ordem cronológica!",
+  "description": "Você acha que domina a linha do tempo da história? Cronologia é um jogo desafiador e educativo onde você precisa organizar eventos históricos em ordem cronológica!",
   "main": "index.js",
   "scripts": {
-    "compSASS": "sass --watch assets/scss/main.scss style.css"
+    "compSASS": "sass --watch assets/scss/main.scss style.css",
+    "server": "node --watch src/config/server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OGustavoCosta/Tempus.git"
+    "url": "git+https://github.com/OGustavoCosta/cronologia.git"
   },
   "author": "Gustavo Costa",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/OGustavoCosta/Tempus/issues"
+    "url": "https://github.com/OGustavoCosta/cronologia/issues"
   },
-  "homepage": "https://github.com/OGustavoCosta/Tempus#readme",
+  "homepage": "https://github.com/OGustavoCosta/cronologia#readme",
   "devDependencies": {
     "sass": "^1.85.1"
+  },
+  "dependencies": {
+    "fastify": "^5.2.1"
   }
 }

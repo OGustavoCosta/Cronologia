@@ -17,7 +17,7 @@ export class Card{
     }
 
     create(){
-
+        
     }
 
     update(){
