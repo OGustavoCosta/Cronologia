@@ -1,4 +1,4 @@
-export class category{
+ export class category{
     constructor(name){
         this.name = name 
     }

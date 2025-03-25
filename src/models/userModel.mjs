@@ -1,8 +1,8 @@
-export class User{
+export default class User{
     constructor(name, email, password){
         this.name = name
         this.email = email
-        this.senha = password
+        this.password = password
     }
 
     #checkPassword(password1, password2){
@@ -15,7 +15,7 @@ export class User{
     }
 
     list(){
-
+        return "A lista inteira aqui"
     }
 
     checkUser(){
