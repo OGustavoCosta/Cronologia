@@ -1,4 +1,5 @@
 import User from '../models/userModel.mjs'
+import { sql } from '../database/database.mjs'
 
 /**
  * Encapsula as rotas
@@ -8,6 +9,7 @@ import User from '../models/userModel.mjs'
 
 /* Autenticação do Usuário */
 function userRoutes(fastify, options){
+
     fastify.get('/auth', (request, reply) => {
         reply.send('login de usuario')
     })
@@ -17,13 +19,9 @@ function userRoutes(fastify, options){
     })
     
     /* Página do Usuário */
-    fastify.get('/admin', (request, reply) => {
-        let name = "Jacinto Pinto"
-        let email = "JacintoPintoAkinoRego.gmail.com"
-        let password = "123456"
-    
-        const user = new User(name, email, password)
-        reply.send(user.list())
+    fastify.get('/admin', async (request, reply) => {
+        
+        reply.send(users)
     })
     
     fastify.put('/admin', async (request, reply) => {

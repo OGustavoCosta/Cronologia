@@ -21,11 +21,9 @@
     "sass": "^1.85.1"
   },
   "dependencies": {
-    "@fastify/postgres": "^6.0.2",
     "@neondatabase/serverless": "^1.0.0",
     "dotenv": "^16.4.7",
-    "fastify": "^5.2.1",
-    "pg": "^8.14.1"
+    "fastify": "^5.2.1"
   },
   "type": "module"
 }
