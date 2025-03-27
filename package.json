@@ -1,10 +1,9 @@
 {
-  "name": "cronologia",
+  "name": "cronologia_api",
   "version": "1.0.0",
   "description": "Cronologia é um jogo desafiador e educativo onde você precisa organizar eventos históricos em ordem cronológica!",
   "main": "index.js",
   "scripts": {
-    "compile:SASS": "sass --watch assets/scss/main.scss style.css",
     "server": "node --watch src/http/server.mjs"
   },
   "repository": {
@@ -17,9 +16,6 @@
     "url": "https://github.com/OGustavoCosta/cronologia/issues"
   },
   "homepage": "https://github.com/OGustavoCosta/cronologia#readme",
-  "devDependencies": {
-    "sass": "^1.85.1"
-  },
   "dependencies": {
     "@neondatabase/serverless": "^1.0.0",
     "dotenv": "^16.4.7",

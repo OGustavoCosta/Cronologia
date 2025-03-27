@@ -1,5 +1,4 @@
-import User from '../models/userModel.mjs'
-import { sql } from '../database/database.mjs'
+import UserController from '../controllers/userControllers.mjs'
 
 /**
  * Encapsula as rotas
@@ -7,29 +6,37 @@ import { sql } from '../database/database.mjs'
  * @param {Object} options opções do plugin, consulte https://fastify.dev/docs/latest/Reference/Plugins/#plugin-options
 */
 
-/* Autenticação do Usuário */
 function userRoutes(fastify, options){
+    const userController = new UserController
 
-    fastify.get('/auth', (request, reply) => {
+    const authSchema = {
+        schema: {
+            body: {
+                type: 'object',
+                properties: {
+                    email: {type: 'string'},
+                    password: {type: 'string'}
+                }
+            }
+        }
+    }
+
+    /* Autenticação do Usuário */
+    fastify.get('/entrar', (request, reply) => {
         reply.send('login de usuario')
     })
     
-    fastify.post('/auth', async (request, reply) => {
-        reply.send('login de usuario')
-    })
+    fastify.post('/entrar', authSchema, userController.authUser)
     
     /* Página do Usuário */
-    fastify.get('/admin', async (request, reply) => {
-        
-        reply.send(users)
-    })
+    fastify.get('/admin', userController.getUsers)
     
     fastify.put('/admin', async (request, reply) => {
         reply.send('mudando perfil do usuario')
     })
     
     fastify.delete('/admin', async (request, reply) => {
-        reply.send('mudando perfil do usuario')
+        reply.send('mudando perfil do usuario'
     })
 };
 
