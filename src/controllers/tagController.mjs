@@ -4,32 +4,48 @@ const tag = new Tag
 
 class TagController{
     async get(request, reply){
-        return reply.status(200).send('Todos as tags')
+        const tags = await tag.list()
+
+        return reply.status(200).send(tags)
     }
 
     async getByID(request, reply){
         const id = request.params.id;
+        const tags = await tag.list(id)
 
-        console.log(id)
-        return reply.status(200).send('Retorna o tag de ID: ' + id)
+        if(tags.length === 0){
+            return reply.status(404).send("Não encontramos nenhuma TAG com esse ID")
+        }
+
+        return reply.status(200).send(tags);
     }
 
     async create(request, reply){
-        let {} = request.body
+        let { name } = request.body
 
-        return reply.status(201).send('Tag Criada')
+        tag.name = name
+        tag.create()
+
+        return reply.status(201).send('TAG Criada')
     }
 
     async update(request, reply){
-        let id = request.params.id
+        const id = request.params.id
+        const { name } = request.body
 
-        return reply.status(202).send('Modifica a tag: ' + id)
+        tag.name = name
+        tag.update(id)
+
+
+        return reply.status(202).send("TAG Modificada")
     }
 
     async delete(request, reply){
         let id = request.params.id
 
-        return reply.status(200).reply('Deleta a tag: ' + id)
+        tag.delete(id)
+
+        return reply.status(200).send("TAG Deletada")
     }
 }
 

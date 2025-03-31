@@ -21,7 +21,7 @@ async function tagRoutes(fastify, options){
 
     fastify.get('/tag', controller.get)
     fastify.get('/tag/:id', controller.getByID)
-    fastify.post('/tag', controller.update)
+    fastify.post('/tag', controller.create)
     fastify.put('/tag/:id', controller.update)
     fastify.delete('/tag/:id', controller.delete)
 }

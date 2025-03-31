@@ -14,7 +14,7 @@ class CategoryController{
         const categories = await category.list(id)
 
         if(categories.length === 0){
-            return reply.status(404).send("Não encontramos nenhuma categoria esse ID")
+            return reply.status(404).send("Não encontramos nenhuma CATEGORIA com esse ID")
         }
 
         return reply.status(200).send(categories);
@@ -31,7 +31,7 @@ class CategoryController{
 
     async update(request, reply){
         const id = request.params.id
-        const { name} = request.body
+        const { name } = request.body
 
         category.name = name
         category.update(id)

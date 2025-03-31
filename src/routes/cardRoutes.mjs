@@ -21,7 +21,7 @@ async function cardRoutes(fastify, options){
 
     fastify.get('/card', controller.get)
     fastify.get('/card/:id', controller.getByID)
-    fastify.post('/card', controller.update)
+    fastify.post('/card', controller.create)
     fastify.put('/card/:id', controller.update)
     fastify.delete('/card/:id', controller.delete)
 }
