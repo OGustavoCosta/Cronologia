@@ -4,32 +4,48 @@ const category = new Category
 
 class CategoryController{
     async get(request, reply){
-        return reply.status(200).send('Todos as categorias')
+        const categories = await category.list()
+
+        return reply.status(200).send(categories)
     }
 
     async getByID(request, reply){
         const id = request.params.id;
+        const categories = await category.list(id)
 
-        console.log(id)
-        return reply.status(200).send('Retorna a categoria de ID: ' + id)
+        if(categories.length === 0){
+            return reply.status(404).send("Não encontramos nenhuma categoria esse ID")
+        }
+
+        return reply.status(200).send(categories);
     }
 
     async create(request, reply){
-        let {} = request.body
+        let { name } = request.body
+
+        category.name = name
+        category.create()
 
         return reply.status(201).send('Categoria Criado')
     }
 
     async update(request, reply){
-        let id = request.params.id
+        const id = request.params.id
+        const { name} = request.body
 
-        return reply.status(202).send('Modifica a categoria: ' + id)
+        category.name = name
+        category.update(id)
+
+
+        return reply.status(202).send("Categoria Modificada")
     }
 
     async delete(request, reply){
         let id = request.params.id
 
-        return reply.status(200).reply('Deleta a categoria: ' + id)
+        category.delete(id)
+
+        return reply.status(200).send("Categoria Deletada")
     }
 }
 
