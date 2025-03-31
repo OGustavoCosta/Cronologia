@@ -8,7 +8,7 @@ class CardController{
     }
 
     async getByID(request, reply){
-        let { id } = request.params.cardID
+        const id = request.params.id;
 
         console.log(id)
         return reply.status(200).send('Retorna o card de ID: ' + id)
@@ -21,13 +21,13 @@ class CardController{
     }
 
     async update(request, reply){
-        let { id } = request.params.cardID
+        let id = request.params.id
 
         return reply.status(202).send('Modifica o card: ' + id)
     }
 
     async delete(request, reply){
-        let { id } = request.params.cardID
+        let id = request.params.id
 
         return reply.status(200).reply('Deleta o card: ' + id)
     }

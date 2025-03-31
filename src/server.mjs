@@ -7,6 +7,8 @@ import { sql } from './database/database.mjs'
 /* Importação de Rotas */
 import userRoutes from './routes/userRoutes.mjs'
 import cardRoutes from './routes/cardRoutes.mjs'
+import categoryRoutes from './routes/categoryRoutes.mjs'
+import tagRoutes from './routes/tagRoutes.mjs'
 
 /**
  * @type {import('fastify').FastifyInstance} Instância do Fastify
@@ -24,11 +26,13 @@ fastify.get('/', (request, reply) =>{
 })
 fastify.register(userRoutes)
 fastify.register(cardRoutes)
+fastify.register(categoryRoutes)
+fastify.register(tagRoutes)
 
 /* Criação do Servidor */
 const startServer = async () => {
     try {
-        await fastify.listen({ port: 3300, host: '0.0.0.0' })
+        await fastify.listen({ port: 3030, host: '0.0.0.0' })
     } catch (err) {
         fastify.log.error(err)
         process.exit(1)

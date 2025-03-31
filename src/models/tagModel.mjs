@@ -1,4 +1,6 @@
-export class Tag{
+import { sql } from '../database/database.mjs'
+
+class Tag{
     constructor(name){
         this.name = name
     }
@@ -19,3 +21,5 @@ export class Tag{
         
     }
 }
+
+export default Tag

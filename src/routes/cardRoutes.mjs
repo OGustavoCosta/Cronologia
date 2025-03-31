@@ -1,7 +1,7 @@
 import CardController from "../controllers/cardController.mjs"
 
 async function cardRoutes(fastify, options){
-    let cardController = new CardController
+    let controller = new CardController
 
     let cardSchema = {
         "schema": {
@@ -19,11 +19,11 @@ async function cardRoutes(fastify, options){
         }
     }
 
-    fastify.get('/card', cardController.get)
-    fastify.get('/card/:cardID', cardController.getByID)
-    fastify.post('/card', cardController.update)
-    fastify.put('/card:cardID', cardController.update)
-    fastify.delete('/card/:cardID', cardController.delete)
+    fastify.get('/card', controller.get)
+    fastify.get('/card/:id', controller.getByID)
+    fastify.post('/card', controller.update)
+    fastify.put('/card/:id', controller.update)
+    fastify.delete('/card/:id', controller.delete)
 }
 
 export default cardRoutes

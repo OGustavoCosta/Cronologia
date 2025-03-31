@@ -1,4 +1,6 @@
- export class category{
+import { sql } from '../database/database.mjs'
+
+class Category{
     constructor(name){
         this.name = name 
     }
@@ -18,4 +20,6 @@
     delete(){
         
     }
-} 
+}
+
+export default Category
