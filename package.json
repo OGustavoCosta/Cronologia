@@ -4,7 +4,7 @@
   "description": "Cronologia é um jogo desafiador e educativo onde você precisa organizar eventos históricos em ordem cronológica!",
   "main": "index.js",
   "scripts": {
-    "server": "node --watch src/http/server.mjs"
+    "server": "node --watch src/server.mjs"
   },
   "repository": {
     "type": "git",

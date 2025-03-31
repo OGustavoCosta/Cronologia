@@ -1,21 +1,29 @@
-/* Administrando Cards */
-server.get('/admin', async (request, reply) => {
-    
-})
+import CardController from "../controllers/cardController.mjs"
 
-server.post('/admin', async (request, reply) => {
-    
-})
+async function cardRoutes(fastify, options){
+    let cardController = new CardController
 
-server.put('/admin', async (request, reply) => {
-    
-})
+    let cardSchema = {
+        "schema": {
+            "body": {
+                "type": "object",
+                "properties": {
+                    "title": {"type": "string"},
+                    "date": {"type": "string", "format": "data"},
+                    "shortDescription": {"type": "string"},
+                    "description": {"type": "string"},
+                    "source": {"type": "string"},
+                    "difficult": {"type": "string"},
+                }
+            }
+        }
+    }
 
-server.delete('/admin', async (request, reply) => {
-    
-})
+    fastify.get('/card', cardController.get)
+    fastify.get('/card/:cardID', cardController.getByID)
+    fastify.post('/card', cardController.update)
+    fastify.put('/card:cardID', cardController.update)
+    fastify.delete('/card/:cardID', cardController.delete)
+}
 
-/* Usando Cards */
-server.get('/game', async (request, reply) => {
-    
-})
+export default cardRoutes

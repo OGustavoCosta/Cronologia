@@ -22,22 +22,7 @@ function userRoutes(fastify, options){
     }
 
     /* Autenticação do Usuário */
-    fastify.get('/entrar', (request, reply) => {
-        reply.send('login de usuario')
-    })
-    
-    fastify.post('/entrar', authSchema, userController.authUser)
-    
-    /* Página do Usuário */
-    fastify.get('/admin', userController.getUsers)
-    
-    fastify.put('/admin', async (request, reply) => {
-        reply.send('mudando perfil do usuario')
-    })
-    
-    fastify.delete('/admin', async (request, reply) => {
-        reply.send('mudando perfil do usuario'
-    })
+    fastify.post('/auth', authSchema, userController.authUser)
 };
 
 export default userRoutes

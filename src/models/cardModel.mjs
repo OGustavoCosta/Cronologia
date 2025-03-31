@@ -1,4 +1,4 @@
-export class Card{
+class Card{
     constructor(img, title, date, shortDescription, description, source, difficulty, verified, category){
         this.img = img
         this.title = title
@@ -28,3 +28,5 @@ export class Card{
 
     }
 }
+
+export default Card
